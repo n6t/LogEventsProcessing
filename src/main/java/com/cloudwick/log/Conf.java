@@ -1,6 +1,7 @@
 package com.cloudwick.log;
 
-import storm.kafka.HostPort;
+import storm.kafka.Broker;
+import storm.kafka.ZkHosts;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,8 @@ public class Conf {
    * Kafka config
    */
   // list of Kafka brokers
-  public static List<HostPort> KAFKA_HOSTS = new ArrayList<HostPort>();
+  //public static List<HostPort> KAFKA_HOSTS = new ArrayList<HostPort>();
+  //public static List<Broker> KAFKA_HOSTS = new ArrayList<Broker>();
   // partitions per kafka broker
   public static final int PARTITIONS = 1;
   // topic to read from
@@ -33,6 +35,7 @@ public class Conf {
    */
   // cassandra host:port combination, this varies from version of cassandra bolt
   public static final String CASSANDRA_HOST = "localhost:9160";
+  public static final String CASSANDRA_CONFIG_KEY="cassandra-config";
   // cassandra keyspace to use
   public static final String CASSANDRA_KEYSPACE = "Logging";
   // cassandra column family to use for storing log volume by minute

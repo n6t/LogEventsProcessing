@@ -43,10 +43,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>storm</groupId>
-            <artifactId>storm</artifactId>
-            <version>0.8.2</version>
-            <!-- keep storm out of the jar-with-dependencies -->
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>0.10.0</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -56,11 +55,9 @@
             </exclusions>
         </dependency>
         <dependency>
-            <!-- Be careful version should match storm version, for list of versions
-            https://clojars.org/storm/storm-kafka/versions -->
-            <groupId>storm</groupId>
+            <groupId>org.apache.storm</groupId>
             <artifactId>storm-kafka</artifactId>
-            <version>0.8.0-wip4</version>
+            <version>0.10.0</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
@@ -68,9 +65,9 @@
             <version>1.1</version>
         </dependency>
         <dependency>
-            <groupId>com.github.ptgoetz</groupId>
+            <groupId>com.hmsonline</groupId>
             <artifactId>storm-cassandra</artifactId>
-            <version>0.3.1-SNAPSHOT</version>
+            <version>0.4.0-rc4</version>
         </dependency>
     </dependencies>
 
